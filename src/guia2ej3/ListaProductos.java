@@ -158,6 +158,8 @@ public class ListaProductos extends javax.swing.JFrame {
         } else {
             try {
                 agregarProducto();
+                jTnombre.setText("");
+                jTprecio.setText("");
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(this, "El precio solo puede ser número");
 
